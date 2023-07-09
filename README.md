@@ -228,7 +228,7 @@ Don't forget to give the project a star! Thanks again!
         ->sendWithTemplate();
  ```
 
-[Click here to read more about sms template](#https://developers.arkesel.com/#tag/SMS-V2/operation/send_template_sms)
+[Click here to read more about sms template](https://developers.arkesel.com/#tag/SMS-V2/operation/send_template_sms)
 <br />
     **OR**
 <br />
@@ -345,7 +345,7 @@ Don't forget to give the project a star! Thanks again!
 
 #### Contact
 ##### Create conatct
-Visit [Arkesel Contact API](#https://developers.arkesel.com/#tag/SMS-V2/operation/create_contact_group) for more understanding.
+Visit [Arkesel Contact API](https://developers.arkesel.com/#tag/SMS-V2/operation/create_contact_group) for more understanding.
 ```php
     use Roddy\Arkesel\v2\Conatct;
     $contact = Contact::groupName("Roddy Group") //required
@@ -363,7 +363,7 @@ Visit [Arkesel Contact API](#https://developers.arkesel.com/#tag/SMS-V2/operatio
 ---
 
 ##### Add contacts to a group
-Visit [Arkesel Add Contact API](#https://developers.arkesel.com/#tag/SMS-V2/operation/create_contacts) for more understanding.
+Visit [Arkesel Add Contact API](https://developers.arkesel.com/#tag/SMS-V2/operation/create_contacts) for more understanding.
 ```php
     use Roddy\Arkesel\v2\Conatct;
     $addContact = Contact::contacts([
@@ -393,7 +393,7 @@ Visit [Arkesel Add Contact API](#https://developers.arkesel.com/#tag/SMS-V2/oper
 ---
 
 ##### Send SMS to group or contacts
-Visit [Arkesel Send Message to Contact API](#https://developers.arkesel.com/#tag/SMS-V2/operation/send_sms_to_contact_group) for more understanding.
+Visit [Arkesel Send Message to Contact API](https://developers.arkesel.com/#tag/SMS-V2/operation/send_sms_to_contact_group) for more understanding.
 ```php
     use Roddy\Arkesel\v2\Conatct;
     $sendMessage = Contact::groupName("Roddy Group") //required
@@ -416,7 +416,7 @@ Visit [Arkesel Send Message to Contact API](#https://developers.arkesel.com/#tag
 #### Voice
 This hasn't been tested yet, so if you get any issue report it [here](https://github.com/Freddywhest/arkesel-laravel/issues) for immediate fix.
 
-Visit [Arkesel Voice API](#https://developers.arkesel.com/#tag/Voice/operation/send_voice_sms) for more understanding.
+Visit [Arkesel Voice API](https://developers.arkesel.com/#tag/Voice/operation/send_voice_sms) for more understanding.
 ```php
     use Roddy\Arkesel\v2\Voice;
     $sendMessage = Voice::file("/C:/files/voice_message.mp3") // location of your voice file or you can use url and it's required
@@ -440,6 +440,3 @@ Visit [Arkesel Voice API](#https://developers.arkesel.com/#tag/Voice/operation/s
 - [Arkesel Docs](https://developers.arkesel.com/) (API Documentation)
 - [All Contributors](https://github.com/Freddywhest/arkesel-laravel/graphs/contributors)
 
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
