@@ -24,7 +24,7 @@
         - [Check balance](#check-balance-1)
         - [Get Sms Details](#get-sms-details)
         - [Contact](#contact)
-            - [Create conatct](#create-conatct)
+            - [Create contact](#create-contact)
             - [Add contacts to a group](#add-contacts-to-a-group)
             - [Send SMS to group or contacts](#send-sms-to-group-or-contacts)
         - [Voice](#voice)
@@ -344,10 +344,10 @@ Don't forget to give the project a star! Thanks again!
 ```
 
 #### Contact
-##### Create conatct
+##### Create contact
 Visit [Arkesel Contact API](https://developers.arkesel.com/#tag/SMS-V2/operation/create_contact_group) for more understanding.
 ```php
-    use Roddy\Arkesel\v2\Conatct;
+    use Roddy\Arkesel\v2\Contact;
     $contact = Contact::groupName("Roddy Group") //required
                 ->create()
 
@@ -365,7 +365,7 @@ Visit [Arkesel Contact API](https://developers.arkesel.com/#tag/SMS-V2/operation
 ##### Add contacts to a group
 Visit [Arkesel Add Contact API](https://developers.arkesel.com/#tag/SMS-V2/operation/create_contacts) for more understanding.
 ```php
-    use Roddy\Arkesel\v2\Conatct;
+    use Roddy\Arkesel\v2\Contact;
     $addContact = Contact::contacts([
             [
                 "phone_number" => "233544919953"
@@ -395,7 +395,7 @@ Visit [Arkesel Add Contact API](https://developers.arkesel.com/#tag/SMS-V2/opera
 ##### Send SMS to group or contacts
 Visit [Arkesel Send Message to Contact API](https://developers.arkesel.com/#tag/SMS-V2/operation/send_sms_to_contact_group) for more understanding.
 ```php
-    use Roddy\Arkesel\v2\Conatct;
+    use Roddy\Arkesel\v2\Contact;
     $sendMessage = Contact::groupName("Roddy Group") //required
                 ->sender("Roddy") // required
                 ->message("Hello world. Spreading peace and joy only.") // required
